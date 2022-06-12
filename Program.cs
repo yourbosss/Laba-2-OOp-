@@ -6,14 +6,11 @@
 
 using System;
 
-namespace lab2
-{
+namespace lab2 {
 
-	class Program
-	{
+	class Program {
 
-		static void Main(string[] args)
-		{
+		static void Main(string[] args) {
 
 			DocumentSingleton.GetInstance.Menu();
 		}

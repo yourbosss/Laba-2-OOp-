@@ -8,24 +8,19 @@ using System;
 
 namespace lab2  {
 
-    public class DocumentSingleton  //порождающий паттерн, который гарантирует, что для определенного класса будет создан только один объект, а также предоставит к этому объекту точку доступа.
-    {
+    public class DocumentSingleton {  ////порождающий паттерн, который гарантирует, что для определенного класса будет создан только один объект, а также предоставит к этому объекту точку доступа.
 
         private static DocumentSingleton instance;
 
-        private DocumentSingleton()
-        {
+        private DocumentSingleton() {
 
         }
 
-        public static DocumentSingleton GetInstance
-        {
+        public static DocumentSingleton GetInstance {
 
-            get
-            {
+            get {
 
-                if (instance == null)
-                {
+                if (instance == null) {
 
                     instance = new DocumentSingleton();
                 }
@@ -34,8 +29,7 @@ namespace lab2  {
             }
         }
 
-        private void SetBaseInfo(out string name, out string creator, out string tags, out string theme, out string path)
-        {
+        private void SetBaseInfo(out string name, out string creator, out string tags, out string theme, out string path) {
 
             Console.Clear();
 
@@ -55,8 +49,7 @@ namespace lab2  {
             path = Console.ReadLine();
         }
 
-        private void MSWordInfo()
-        {
+        private void MSWordInfo() {
 
             string Name, Creator, Tags, Theme, Path;
 
@@ -74,8 +67,7 @@ namespace lab2  {
             Doc.GetInfo();
         }
 
-        private void PDFInfo()
-        {
+        private void PDFInfo() {
 
             string Name, Creator, Tags, Theme, Path;
 
@@ -93,8 +85,7 @@ namespace lab2  {
             Doc.GetInfo();
         }
 
-        private void MSExcelInfo()
-        {
+        private void MSExcelInfo() {
 
             string Name, Creator, Tags, Theme, Path;
 
@@ -115,8 +106,7 @@ namespace lab2  {
             Doc.GetInfo();
         }
 
-        private void TXTInfo()
-        {
+        private void TXTInfo() {
 
             string Name, Creator, Tags, Theme, Path;
 
@@ -137,8 +127,7 @@ namespace lab2  {
             Doc.GetInfo();
         }
 
-        private void HTMLInfo()
-        {
+        private void HTMLInfo() {
 
             string Name, Creator, Tags, Theme, Path;
 
@@ -156,8 +145,7 @@ namespace lab2  {
             Doc.GetInfo();
         }
 
-        public void Menu()
-        {
+        public void Menu() {
 
             Console.WriteLine("Выберите тип файла:" + "\n");
             Console.WriteLine("MS Word      0");
@@ -168,8 +156,7 @@ namespace lab2  {
 
             var Option = Console.ReadLine();
 
-            switch (Option)
-            {
+            switch (Option) {
 
                 case "0":
 

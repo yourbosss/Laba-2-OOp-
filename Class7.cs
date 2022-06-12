@@ -11,8 +11,7 @@ namespace lab2 {
         private string Theme { get; set; }
         private string Path { get; set; }
 
-        public Document(string name, string creator, string tags, string theme, string path)
-        {
+        public Document(string name, string creator, string tags, string theme, string path) {
 
             Name = name;
             Creator = creator;
@@ -21,8 +20,7 @@ namespace lab2 {
             Path = path;
         }
 
-        public virtual void GetInfo()
-        {
+        public virtual void GetInfo() {
 
             Console.WriteLine($"Имя: {Name}");
             Console.WriteLine($"Автор: {Creator}");
